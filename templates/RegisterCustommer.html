@@ -1,0 +1,23 @@
+{% extends 'Design.html' %}
+{% block title %}
+    RegisterCustommer
+{% endblock %}
+
+{% block body %}
+    <div class="col-12">
+    {% include 'Users/message.html' %}
+    </div>
+    <form action="POST">
+        {% csrf_token %}
+        <div class="col-12">
+        <h1>FORMULARIO PARA INGRESO DE PROVEEDORES</h1>
+        </div>
+        {% for field in form %}
+            <div class="form-group">
+                {{ field.label_tag }}
+                {{ field }}
+            </div>
+        {% endfor %}
+        <button type="submit" class="btn btn-primary">REGISTRAR</button>
+    </form>
+{% endblock %}

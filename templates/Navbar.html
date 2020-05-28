@@ -1,0 +1,29 @@
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <a class="navbar-brand" href="#">Navbar</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar" >
+    <span class="navbar-toggler-icon"></span>
+  </button>
+    <div id="navbar" class="navbar-collapse collapse hide">
+        <ul class="nav navbar-nav ml-auto">
+            <li class="navbar-item active">
+                <a href="{% url 'index' %}" class="nav-link">INICIO</a>
+            </li>
+            <li class="navbar-item active">
+                <a href="{% url 'loginUser' %}" class="nav-link">Login</a>
+            </li >
+            <li class="navbar-item active">
+                <a href="{% url 'registerUser' %}" class="nav-link">RegisterUser</a>
+            </li>
+            <li class="navbar-item active">
+                <a href="{% url 'registerProducts' %}" class="nav-link">RegisterProduct</a>
+            </li>
+            <li class="navbar-item active">
+                <a href="{% url 'registerClient' %}" class="nav-link">RegisterClient</a>
+            </li>
+            <li class="navbar-item active">
+                <a href="{% url 'registerCustommer' %}" class="nav-link">RegisterCustommer</a>
+            </li>
+        </ul>
+    </div>
+
+</nav>
